@@ -1,0 +1,136 @@
+.container {
+    display: grid;
+    grid-template-columns: 98%;
+    grid-template-rows: 15% 85%;
+    justify-content: center;
+    align-content: center;
+}
+
+.container .left-navigation-panel {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.container .left-navigation-panel .brand-name {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    justify-content: left;
+    align-content: center;
+    font-size: 1.75rem;
+}
+
+.container .left-navigation-panel .navigation-items {
+    display: none;
+}
+
+.container .left-navigation-panel .information-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+    height: 1rem;
+}
+
+.container .left-navigation-panel .information-container .playing-music-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    justify-content: left;
+    align-content: center;
+}
+
+.container .left-navigation-panel .information-container .playing-music-container .playing-music-text {
+    display: none;
+}
+
+.container .left-navigation-panel .information-container .timer-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100%;
+    justify-content: right;
+    align-content: center;
+    padding-right: 5px;
+}
+
+.container .left-navigation-panel .information-container .timer-container .timer-text {
+    font-size: 1rem;
+}
+
+.container .right-container {
+    display: grid;
+    justify-content: left;
+    grid-template-columns: 100%;
+}
+
+.container .right-container .assessment {
+    font-size: 1rem;
+}
+
+.container .right-container .solution .important-note {
+    display: none;
+}
+
+@media screen and (min-width: 769px) { /* laptop */
+    .container {
+        grid-template-columns: 15% 85%;
+        grid-template-rows: 100%;
+    }
+
+    .container .left-navigation-panel {
+        grid-template-rows: 15% 75% 10%;
+        grid-row-gap: 0;
+        height: 100%;
+        padding: 5px;
+        border-right: 1px solid lightgrey;
+        margin-bottom: 0;
+    }
+
+    .container .left-navigation-panel .brand-name {
+        font-size: 1.3rem;
+    }
+
+    .container .left-navigation-panel .navigation-items {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        justify-content: left;
+    }
+
+    .container .left-navigation-panel .information-container {
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        justify-content: left;
+        margin-top: 0;
+        height: auto;
+    }
+
+    .container .left-navigation-panel .information-container .playing-music-container .playing-music-text {
+        display: none;
+    }
+
+    .container .left-navigation-panel .information-container .timer-container {
+        grid-template-columns: 100%;
+        justify-content: left;
+        padding-right: 0;
+    }
+
+    .container .right-container {
+        padding: 10px 1rem;
+    }
+
+    .container .right-container .assessment {
+        font-size: 1.2rem;
+    }
+
+    .container .right-container .solution .important-note {
+        display: block;
+        font-size: 1.2rem;
+        margin: 9.5rem 0;
+    }
+}
